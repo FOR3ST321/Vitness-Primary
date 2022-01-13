@@ -1,4 +1,4 @@
-[
+const blog = [
     {
         "id" : 1,
         "blogTitle" : "test",
