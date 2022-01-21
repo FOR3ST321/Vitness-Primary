@@ -1,48 +1,106 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 80px;
-    background-color: #4091C9;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.navbar-logo{
-    /* width: 55%; */
-    /* display: flex;
-    justify-content: flex-end; */
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #4091c9;
 }
 
-.navbar-logo img{
-    width: 100%;
-    height: 80px;
+#logo-header {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.navbar-menu{
-    /* width: 45%; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
+#logo-header img {
+  height: 100%;
 }
 
-.navbar-menu a{
-    color: white;
-    text-decoration: none;
+.header-menu {
+  margin-right: 50px;
+  color: white;
 }
 
-.navbar-item{
-    width: 120px;
-    display: flex;
-    justify-content: center;
+#dropdown:hover {
+  cursor: pointer;
 }
 
-.navbar-menu a:hover{
-    color: cyan;
+/* navbar */
+.navbar {
+  display: flex;
+  padding: 30px 0 30px 0;
+  background-color: black;
+}
+
+.nav-item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 15pt;
+}
+
+.nav-item a {
+  padding: 0 5px 5px 5px;
+  border-bottom: 2px solid black;
+}
+
+.nav-item a:hover {
+  color: #90bede;
+  border-bottom: 2px solid #90bede;
+}
+
+/* footer */
+.footer {
+  padding: 30px 80px 30px 80px;
+  background-color: #4091c9;
+  display: flex;
+  color: white;
+}
+
+.footer-sosmed {
+  width: 50%;
+}
+
+.footer-sosmed-header {
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.footer-sosmed-item {
+  display: flex;
+  align-items: center;
+}
+
+.sosmed-name {
+  padding-left: 20px;
+}
+
+.sosmed-img img {
+  width: 50px;
+}
+
+.footer-copyright {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+}
+
+.footer-copyright img {
+  width: 40%;
 }

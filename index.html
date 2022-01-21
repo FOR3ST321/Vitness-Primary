@@ -1,30 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Vitness Primary</title>
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="navbar-logo">
-                <a href="/index.html">
-                    <img src="./assets/img/LOGO - Copy.png">
-                </a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Vitness Primary</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/index.html" id="logo-header">
+        <img src="./assets/img/LOGO - Copy.png" />
+      </a>
+      <div class="header-menu">
+        <p id="dropdown">dropdown</p>
+      </div>
+    </div>
 
-            <div class="navbar-menu">
-                <a href="">tes</a>
-            </div>
+    <div class="navbar">
+      <div class="nav-item">
+        <a href="./index.html">HOME</a>
+      </div>
+      <div class="nav-item">
+        <a href="./classes.html">CLASSES</a>
+      </div>
+      <div class="nav-item">
+        <a href="./blog.html">BLOG</a>
+      </div>
+      <div class="nav-item">
+        <a href="./join.html">JOIN</a>
+      </div>
+    </div>
+
+    <div class="slider">
+      <img src="./assets/img/gym-blog.jpg" alt="" />
+    </div>
+
+    <div class="join-section">
+      <div class="join-content">
+        <p class="join-content-header">LOREM IPSUM CERITANYA NGAJAK RIBUT</p>
+        <p class="join-content-subheader">lorem ipsum ceritanya ngajak ribut</p>
+        <a href="./join.html" class="join-content-button">Join Now!</a>
+      </div>
+      <div class="join-picture">
+        <img src="./assets/img/gigachad.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+
+  <div class="class-section">
+    <div class="class-header">
+      <p class="header-header">OUR FEATURED CLASS</p>
+      <p class="header-subheader">lorem ipsum pala bapakau pecah</p>
+    </div>
+    <div class="class-content">
+      <a href="./classes.html" class="class-content-item">
+        <div class="class-pict"></div>
+        <div class="class-desc">
+          <div class="class-name">Class Name</div>
+          <div class="class-time">60 Minutes</div>
         </div>
-        <!-- <p id='test'></p> -->
-    </body>
+      </a>
+      <a href="./classes.html" class="class-content-item">
+        <div class="class-pict"></div>
+        <div class="class-desc">
+          <div class="class-name">Class Name</div>
+          <div class="class-time">60 Minutes</div>
+        </div>
+      </a>
+      <a href="./classes.html" class="class-content-item">
+        <div class="class-pict"></div>
+        <div class="class-desc">
+          <div class="class-name">Class Name</div>
+          <div class="class-time">60 Minutes</div>
+        </div>
+      </a>
+    </div>
+    <div class="class-button-container">
+      <a href="./classes.html" class="class-button">Discover All Class >></a>
+    </div>
+  </div>
 
-    <script src="./assets/js/main.js"></script>
-    <script src="./data/programs.js"></script>
-    <script src="./data/blog.js"></script>
+  <div class="blog-section">
+    <div class="blog-header">LASTEST BLOG</div>
+    <div class="blog-content">
+      <a href="./blog-detail.html" class="blog-content-item">
+        <div class="blog-item-img"></div>
+        <div class="blog-item-content">
+          <div class="blog-title">Blog Title 1</div>
+          <div class="blog-time">Saturday, 69-69-2022</div>
+          <div class="blog-excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            obcaecati nemo reiciendis excepturi. Quidem consequatur quisquam,
+            sunt beatae expedita impedit error rerum laboriosam autem velit
+            exercitationem odit porro ad accusamus!
+          </div>
+        </div>
+      </a>
+      <a href="./blog-detail.html" class="blog-content-item">
+        <div class="blog-item-img"></div>
+        <div class="blog-item-content">
+          <div class="blog-title">Blog Title 2</div>
+          <div class="blog-time">Saturday, 69-69-2022</div>
+          <div class="blog-excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            obcaecati nemo reiciendis excepturi. Quidem consequatur quisquam,
+            sunt beatae expedita impedit error rerum laboriosam autem velit
+            exercitationem odit porro ad accusamus!
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="blog-button-container">
+      <a href="./blog.html" class="blog-button">See All Blog</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-sosmed">
+      <div class="footer-sosmed-header">Find us on</div>
+      <a href="https://instagram.com" class="footer-sosmed-item">
+        <div class="sosmed-img">
+          <img src="./assets/img/InstagramLogo.png" alt="" />
+        </div>
+        <div class="sosmed-name">@vitnessPrimary</div>
+      </a>
+      <a href="https://facebook.com" class="footer-sosmed-item">
+        <div class="sosmed-img">
+          <img src="./assets/img/FacebookLogo.png" alt="" />
+        </div>
+        <div class="sosmed-name">Vitness Primary</div>
+      </a>
+      <a href="https://twitter.com" class="footer-sosmed-item">
+        <div class="sosmed-img">
+          <img src="./assets/img/TwitterLogo.png" alt="" />
+        </div>
+        <div class="sosmed-name">@vitnessPrimary</div>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <img src="./assets/img/LOGO - Copy.png" alt="" />
+      <p>copyright @team 2022, all rights reserved</p>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./data/programs.js"></script>
+  <script src="./data/blog.js"></script>
 </html>
-
