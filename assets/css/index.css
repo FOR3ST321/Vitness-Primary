@@ -28,8 +28,9 @@
 }
 
 .join-content-subheader {
-  font-size: 18pt;
+  font-size: 15pt;
   margin-bottom: 150px;
+  padding: 20px 50px 0 0;
 }
 
 .join-content-button {
@@ -73,13 +74,18 @@
 .class-content {
   display: flex;
   padding-bottom: 30px;
+  overflow: auto;
+}
+
+/* width */
+.class-content::-webkit-scrollbar {
+  height: 5px;
 }
 
 .class-content-item {
   height: 300px;
   background-color: black;
   border-radius: 10px;
-  width: 30%;
   margin: 0 30px 0 30px;
 }
 
@@ -90,7 +96,9 @@
 }
 
 .class-desc {
+  width: 200px;
   height: 40%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,6 +108,7 @@
 .class-name {
   font-size: 20pt;
   font-weight: bold;
+  text-align: center;
 }
 
 .class-button-container {
@@ -128,21 +137,41 @@
   color: white;
 }
 
+.blog-content {
+  height: 420px;
+  overflow: auto;
+}
+
+.blog-content::-webkit-scrollbar {
+  width: 5px;
+}
+
 .blog-content-item {
   display: flex;
   background-color: white;
-  margin: 20px 0 20px 0;
+  margin: 20px 20px 20px 0;
 }
 
 .blog-item-img {
   width: 20%;
   background-image: url("../img/gigachad.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .blog-item-content {
   width: 80%;
   padding: 30px 100px 30px 30px;
+  height: 200px;
+}
+
+.blog-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: #255271;
 }
 
 .blog-title {
