@@ -1,44 +1,214 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.navbar{
-    display: flex;
-    height: 80px;
-    background-color: black;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.navbar-logo{
-    display: flex;
-    width: 15%;
-    padding-left: 10px;
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #4091c9;
 }
 
-.navbar-logo img{
-    display: flex;
-    width: 100%;
-    height: 100%;
+#logo-header {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.navbar-menu{
-    width: 60%;
-    display: flex;
+#logo-header img {
+  height: 100%;
+}
+
+.header-menu {
+  margin-right: 50px;
+  color: white;
+}
+
+#dropdown:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .header-menu {
+    margin-right: 20px;
+  }
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  padding: 30px 0 30px 0;
+  background-color: black;
+}
+
+.nav-item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 15pt;
+}
+
+.nav-item a {
+  padding: 0 5px 5px 5px;
+  border-bottom: 2px solid black;
+}
+
+.nav-item a:hover {
+  color: #90bede;
+  border-bottom: 2px solid #90bede;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 0;
+    flex-direction: column;
     align-items: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 10px 0 10px 0;
+  }
 }
 
-.navbar-menu a{
-    color: white;
-    text-decoration: none;
+/* footer */
+.footer {
+  padding: 30px 40px 30px 80px;
+  background-color: #4091c9;
+  display: flex;
+  color: white;
 }
 
-.navbar-item{
-    width: 120px;
+.footer-sosmed {
+  width: 50%;
+}
+
+.footer-sosmed-header {
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.footer-sosmed-item {
+  display: flex;
+  align-items: center;
+}
+
+.sosmed-name {
+  padding-left: 20px;
+}
+
+.sosmed-img img {
+  width: 50px;
+}
+
+.footer-copyright {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+}
+
+.footer-copyright img {
+  width: 40%;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .footer-sosmed-container {
     display: flex;
-    justify-content: center;
+  }
+
+  .sosmed-name {
+    display: none;
+  }
+
+  .sosmed-img img {
+    width: 40px;
+    padding: 0 5px 0 5px;
+  }
+
+  .footer-copyright {
+    padding-left: 20px;
+    text-align: center;
+    font-size: 9pt;
+  }
+
+  .footer-copyright img {
+    width: 80%;
+  }
 }
 
-.navbar-menu a:hover{
-    color: cyan;
+@media screen and (min-width: 321px) and (max-width: 700px) {
+  .footer {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .sosmed-img img {
+    width: 30px;
+  }
+
+  .sosmed-name {
+    font-size: 10pt;
+  }
+
+  .footer-copyright {
+    padding-left: 20px;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  .footer-copyright img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .footer {
+    padding-right: 50px;
+  }
+
+  .footer-copyright {
+    padding-left: 50px;
+    text-align: center;
+  }
+}
+
+/* scroller */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }

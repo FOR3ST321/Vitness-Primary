@@ -1,10 +1,12 @@
 const blog = [
-    {
-        id: 1,
-        blogTitle: "5 Tips to Build a Daily Movement Routine",
-        category: "Daily Live",
-        datePosted: "12-01-2022",
-        description: `
+  {
+    id: 1,
+    blogTitle: "5 Tips to Build a Daily Movement Routine",
+    category: "Daily Live",
+    datePosted: "12-01-2022",
+    excerpt:
+      "Daily movement is important. It’s easy to get to the end of your busy day and realize that you haven’t moved in hours, but as studies show, our sedentary lifestyle is harming our...",
+    description: `
         <p>
             Daily movement is important. It’s easy to get to the end of your busy day and realize that you haven’t moved in hours, but as studies show, our sedentary lifestyle is harming our health. The good news? Daily movement can be integrated into your routine without rearranging your life. Here’s how:
             <br><br>
@@ -41,15 +43,18 @@ const blog = [
             More movement every day will help your mental clarity, energy levels and productivity. Active reflection at the end of each day will help you subconsciously reward yourself for doing things that made you feel better. This should motivate you to do it again the next day because you’re building a habit.
         </p>
         `,
-        image: "https://www.goldsgym.com/wp-content/uploads/sites/1/2020/07/daily-movement.jpg",
-        source: "https://www.goldsgym.com/blog/5-tips-build-daily-movement-routine/",
-    },
-    {
-        id: 2,
-        blogTitle: "How to Work Out (Safely) with a Friend",
-        category: "Workout",
-        datePosted: "01-02-2022",
-        description: `
+    image: "./assets/img/blog/1.jpg",
+    source:
+      "https://www.goldsgym.com/blog/5-tips-build-daily-movement-routine/",
+  },
+  {
+    id: 2,
+    blogTitle: "How to Work Out (Safely) with a Friend",
+    category: "Workout",
+    datePosted: "01-02-2022",
+    excerpt:
+      "Missing your workout buddy? There are still ways to get active with your best friend. Here are some tips to work up a sweat with your BFF while social distancing...",
+    description: `
         <p>
             Missing your workout buddy? There are still ways to get active with your best friend. Here are some tips to work up a sweat with your BFF while social distancing. <br>
             <br>
@@ -78,15 +83,17 @@ const blog = [
             The best part of a workout buddy is the accountability and support. Keep each other motivated and on track with sweaty selfies and frequent check-ins, talking through challenges and goals.
         </p>
         `,
-        image: "https://www.goldsgym.com/wp-content/uploads/sites/1/2020/07/partner-workouts-social-distancing.jpg",
-        source: "https://www.goldsgym.com/blog/work-safely-friend/",
-    },
-    {
-        id: 3,
-        blogTitle: "A Must-Have Travel Workout That Needs No Equipment",
-        category: "Workout",
-        datePosted: "15-02-2022",
-        description: `
+    image: "./assets/img/blog/2.jpg",
+    source: "https://www.goldsgym.com/blog/work-safely-friend/",
+  },
+  {
+    id: 3,
+    blogTitle: "A Must-Have Travel Workout That Needs No Equipment",
+    category: "Workout",
+    datePosted: "15-02-2022",
+    excerpt:
+      "Whether you are traveling for work or going on vacation, exercising while you’re on the road might not be your top priority, but we’ve created the perfect travel workout for you...",
+    description: `
         <p>
             Whether you are traveling for work or going on vacation, exercising while you’re on the road might not be your top priority, but we’ve created the perfect travel workout for you that can be done without going to the gym or using any equipment.
             <br> <br>
@@ -119,16 +126,19 @@ const blog = [
             <br><br>
         </p>
         `,
-        image: "https://www.goldsgym.com/wp-content/uploads/sites/1/2019/10/mobility_hero.jpg",
-        source : "https://www.goldsgym.com/blog/must-travel-workout-needs-no-equipment/"
-    },
-    {
-        id: 4,
-        blogTitle:
-            "Want to deal with holiday stress and anxiety better? there's an app for that",
-        category: "Daily Live",
-        datePosted: "01-01-2022",
-        description: `
+    image: "./assets/img/blog/3.jpg",
+    source:
+      "https://www.goldsgym.com/blog/must-travel-workout-needs-no-equipment/",
+  },
+  {
+    id: 4,
+    blogTitle:
+      "Want to deal with holiday stress and anxiety better? there's an app for that",
+    category: "Daily Live",
+    datePosted: "01-01-2022",
+    excerpt:
+      "It’s the most wonderful time of the year, so the song goes. And truly, it can be. Shopping centres are playing happy songs, Christmas decorations can be found all over the city...",
+    description: `
         <p>
             It’s the most wonderful time of the year, so the song goes. And truly, it can be. Shopping centres are playing happy songs, Christmas decorations can be found all over the city and you’ll soon hopefully have some time off work to see friends and family.
             <br>
@@ -150,15 +160,18 @@ const blog = [
             <br><br>
         </p>
         `,
-        image: "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/malaysia/blogs/want-to-deal-with-holiday-stress-and-anxiety-better/want-to-deal-with-holiday-stress-and-anxiety-better_details_1200px_1980px.jpg",
-        source : "https://www.celebrityfitness.co.id/blog/want-to-deal-with-holiday-stress-and-anxiety-better"
-    },
-    {
-        id: 5,
-        blogTitle: "Vitness Primary 1st Anniversary!",
-        category: "Vitness Blog",
-        datePosted: "10-02-2022",
-        description: `
+    image: "./assets/img/blog/4.jpg",
+    source:
+      "https://www.celebrityfitness.co.id/blog/want-to-deal-with-holiday-stress-and-anxiety-better",
+  },
+  {
+    id: 5,
+    blogTitle: "Vitness Primary 1st Anniversary!",
+    category: "Vitness Blog",
+    datePosted: "10-02-2022",
+    excerpt:
+      "In the summer of 2021, bodybuilder and former Merchant Marine Joe Gold founded Vitness Primary in a cinder-block building in Venice Beach, California, with equipment he built himself...",
+    description: `
         <p>
             In the summer of 2021, bodybuilder and former Merchant Marine Joe Gold founded Vitness Primary in a cinder-block building in Venice Beach, California, with equipment he built himself.
             <br> <br>
@@ -172,7 +185,7 @@ const blog = [
             Help us celebrate by tagging us and using #Vitness1st !
         </p>
         `,
-        image: "https://thumbs.dreamstime.com/b/logo-st-anniversary-company-vector-eps-badge-celebration-party-170955916.jpg.",
-        source : "https://www.goldsgym.com/blog/55-birthday/"
-    },
+    image: "./assets/img/blog/5.jpg",
+    source: "https://www.goldsgym.com/blog/55-birthday/",
+  },
 ];

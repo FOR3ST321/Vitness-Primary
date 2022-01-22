@@ -1,56 +1,56 @@
 const programs = [
-    {
-        "id" : 1,
-        "name" : "Hatha Yoga",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/yoga/yoga_9.png"
-    },
-    {
-        "id" : 2,
-        "name" : "Body Balance",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/yoga/yoga_2.png"
-    },
-    {
-        "id" : 3,
-        "name" : "Body Combat",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/body-combat/bodycombat_2.jpg"
-    },
-    {
-        "id" : 4,
-        "name" : "Body Pump",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/body-pump/bodypump_2.png"
-    },
-    {
-        "id" : 5,
-        "name" : "Bosu",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/malaysia/class-slider/playground/playground_6.png"
-    },
-    {
-        "id" : 6,
-        "name" : "Energy Aerobics",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/malaysia/class-slider/strong-by-zumba/strongbyzumba_7.jpg"
-    },
-    {
-        "id" : 5,
-        "name" : "Gentle Yoga",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/yoga/yoga_5.png"
-    },
-    {
-        "id" : 6,
-        "name" : "Kettlebel",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/playground/playground_1.png"
-    },
-    {
-        "id" : 7,
-        "name" : "Playground Strike",
-        "duration" : "60 min",
-        "image" : "https://www.celebrityfitness.co.id/-/media/project/evolution-wellness/celebrity-fitness/south-east-asia/indonesia/class-slider/playground/playground_16.png"
-    },
-]
+  {
+    id: 1,
+    name: "Hatha Yoga",
+    duration: "60 min",
+    image: "./assets/img/class/1.png",
+  },
+  {
+    id: 2,
+    name: "Body Balance",
+    duration: "60 min",
+    image: "./assets/img/class/2.png",
+  },
+  {
+    id: 3,
+    name: "Body Combat",
+    duration: "60 min",
+    image: "./assets/img/class/3.jpg",
+  },
+  {
+    id: 4,
+    name: "Body Pump",
+    duration: "60 min",
+    image: "./assets/img/class/4.png",
+  },
+  {
+    id: 5,
+    name: "Bosu",
+    duration: "60 min",
+    image: "./assets/img/class/5.png",
+  },
+  {
+    id: 6,
+    name: "Energy Aerobics",
+    duration: "60 min",
+    image: "./assets/img/class/6.jpg",
+  },
+  {
+    id: 7,
+    name: "Gentle Yoga",
+    duration: "60 min",
+    image: "./assets/img/class/7.png",
+  },
+  {
+    id: 8,
+    name: "Kettlebel",
+    duration: "60 min",
+    image: "./assets/img/class/8.png",
+  },
+  {
+    id: 9,
+    name: "Playground Strike",
+    duration: "60 min",
+    image: "./assets/img/class/9.png",
+  },
+];

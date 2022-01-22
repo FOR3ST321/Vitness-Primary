@@ -1,0 +1,235 @@
+/* slider */
+.slider {
+  background-color: #3a3a3a;
+}
+.slider img {
+  padding: 0 50px 0 50px;
+  width: 100%;
+  height: 300px;
+}
+
+/* join section */
+.join-section {
+  padding: 50px;
+  background-image: url("../img/gym-join.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+}
+
+.join-content {
+  padding: 30px;
+  width: 70%;
+}
+
+.join-content-header {
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+.join-content-subheader {
+  font-size: 15pt;
+  margin-bottom: 150px;
+  padding: 20px 50px 0 0;
+}
+
+.join-content-button {
+  background-color: #3a3a3a;
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+  font-size: 20pt;
+}
+
+.join-picture {
+  width: 30%;
+}
+
+.join-picture img {
+  width: 100%;
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .join-picture img {
+    padding-top: 50px;
+    width: 200px;
+  }
+  .join-content-subheader {
+    width: 600px;
+    margin-bottom: 50px;
+  }
+}
+
+/* class section */
+.class-section {
+  background-image: url("../img/gym-class.jpg");
+  background-size: cover;
+  padding: 50px;
+}
+
+.class-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.header-header {
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+.header-subheader {
+  font-size: 18pt;
+}
+
+.class-content {
+  display: flex;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+
+/* width */
+.class-content::-webkit-scrollbar {
+  height: 5px;
+}
+
+.class-content-item {
+  height: 300px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 30px 0 30px;
+}
+
+.class-pict {
+  height: 60%;
+  background-image: url("../img/gigachad.jpg");
+  background-size: cover;
+}
+
+.class-desc {
+  width: 230px;
+  height: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-name {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.class-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 50px 0;
+}
+
+.class-button {
+  padding: 15px 50px 15px 50px;
+  background-color: #255271;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .class-desc {
+    width: 270px;
+  }
+}
+
+/* blog section */
+.blog-section {
+  background-image: url("../img/gym-blog.jpg");
+  background-size: cover;
+  padding: 50px 50px 50px 80px;
+}
+
+.blog-header {
+  padding: 30px 0 30px 0;
+  font-size: 36pt;
+  font-weight: bold;
+  color: white;
+}
+
+.blog-content {
+  height: 420px;
+  overflow: auto;
+}
+
+.blog-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.blog-content-item {
+  display: flex;
+  background-color: white;
+  margin: 20px 20px 20px 0;
+}
+
+.blog-item-img {
+  width: 20%;
+  background-image: url("../img/gigachad.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.blog-item-content {
+  width: 80%;
+  padding: 30px 100px 30px 30px;
+  height: 200px;
+}
+
+.blog-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: #255271;
+}
+
+.blog-title {
+  font-size: 18pt;
+  font-weight: bold;
+  color: black;
+}
+
+.blog-time {
+  color: #686868;
+  padding-bottom: 20px;
+}
+
+.blog-excerpt {
+  color: black;
+}
+
+.blog-button-container {
+  padding: 50px 0 50px 0;
+}
+
+.blog-button {
+  color: black;
+  font-size: 13pt;
+  padding: 20px 50px 20px 50px;
+  background-color: #d1d1d1;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .blog-content {
+    height: 530px;
+  }
+
+  .blog-item-img {
+    width: 40%;
+  }
+
+  .blog-item-content {
+    width: 60%;
+    padding: 30px 10px 30px 30px;
+    height: 240px;
+  }
+}
