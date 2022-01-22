@@ -38,6 +38,12 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+  .header-menu {
+    margin-right: 20px;
+  }
+}
+
 /* navbar */
 .navbar {
   display: flex;
@@ -62,9 +68,24 @@ a {
   border-bottom: 2px solid #90bede;
 }
 
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 10px 0 10px 0;
+  }
+}
+
 /* footer */
 .footer {
-  padding: 30px 80px 30px 80px;
+  padding: 30px 40px 30px 80px;
   background-color: #4091c9;
   display: flex;
   color: white;
@@ -106,6 +127,70 @@ a {
   width: 40%;
 }
 
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .footer-sosmed-container {
+    display: flex;
+  }
+
+  .sosmed-name {
+    display: none;
+  }
+
+  .sosmed-img img {
+    width: 40px;
+    padding: 0 5px 0 5px;
+  }
+
+  .footer-copyright {
+    padding-left: 20px;
+    text-align: center;
+    font-size: 9pt;
+  }
+
+  .footer-copyright img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 700px) {
+  .footer {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .sosmed-img img {
+    width: 30px;
+  }
+
+  .sosmed-name {
+    font-size: 10pt;
+  }
+
+  .footer-copyright {
+    padding-left: 20px;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  .footer-copyright img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .footer {
+    padding-right: 50px;
+  }
+
+  .footer-copyright {
+    padding-left: 50px;
+    text-align: center;
+  }
+}
+
 /* scroller */
 /* width */
 ::-webkit-scrollbar {
@@ -114,7 +199,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: none;
 }
 
 /* Handle */

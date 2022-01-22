@@ -5,7 +5,7 @@ const blog = [
     category: "Daily Live",
     datePosted: "12-01-2022",
     excerpt:
-      "Daily movement is important. It’s easy to get to the end of your busy day and realize that you haven’t moved in hours, but as studies show, our sedentary lifestyle is harming our health. The good news? Daily movement can be integrated into your routine without rearranging your life. Here’s how:...",
+      "Daily movement is important. It’s easy to get to the end of your busy day and realize that you haven’t moved in hours, but as studies show, our sedentary lifestyle is harming our...",
     description: `
         <p>
             Daily movement is important. It’s easy to get to the end of your busy day and realize that you haven’t moved in hours, but as studies show, our sedentary lifestyle is harming our health. The good news? Daily movement can be integrated into your routine without rearranging your life. Here’s how:
@@ -92,7 +92,7 @@ const blog = [
     category: "Workout",
     datePosted: "15-02-2022",
     excerpt:
-      "Whether you are traveling for work or going on vacation, exercising while you’re on the road might not be your top priority, but we’ve created the perfect travel workout for you that can be done without going to the gym or using any equipment...",
+      "Whether you are traveling for work or going on vacation, exercising while you’re on the road might not be your top priority, but we’ve created the perfect travel workout for you...",
     description: `
         <p>
             Whether you are traveling for work or going on vacation, exercising while you’re on the road might not be your top priority, but we’ve created the perfect travel workout for you that can be done without going to the gym or using any equipment.
@@ -137,7 +137,7 @@ const blog = [
     category: "Daily Live",
     datePosted: "01-01-2022",
     excerpt:
-      "It’s the most wonderful time of the year, so the song goes. And truly, it can be. Shopping centres are playing happy songs, Christmas decorations can be found all over the city and you’ll soon hopefully have some time off work to see friends and family...",
+      "It’s the most wonderful time of the year, so the song goes. And truly, it can be. Shopping centres are playing happy songs, Christmas decorations can be found all over the city...",
     description: `
         <p>
             It’s the most wonderful time of the year, so the song goes. And truly, it can be. Shopping centres are playing happy songs, Christmas decorations can be found all over the city and you’ll soon hopefully have some time off work to see friends and family.
