@@ -47,6 +47,10 @@ a {
   justify-content: right;
 }
 
+#dropdown img {
+  height: 30px;
+}
+
 #dropdown:hover {
   cursor: pointer;
 }
@@ -99,7 +103,7 @@ a {
     padding: 0;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 100%;
   }

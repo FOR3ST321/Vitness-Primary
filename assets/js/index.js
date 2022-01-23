@@ -3,13 +3,13 @@ $(document).ready(function () {
   programs.forEach(classFunction);
   function classFunction(item) {
     $(".class-content").append(`
-      <a href="./classes.html?id=${item.id}" class="class-content-item">
+      <button class="class-content-item">
         <div class="class-pict" id="class-pict-${item.id}"></div>
         <div class="class-desc">
           <div class="class-name">${item.name}</div>
           <div class="class-time">${item.duration}</div>
         </div>
-      </a>
+      </button>
     `);
     $(`#class-pict-${item.id}`).css("background-image", `url(${item.image})`);
   }

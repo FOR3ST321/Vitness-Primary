@@ -1,0 +1,104 @@
+/* title section */
+.title-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg-gelap.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  color: white;
+}
+
+.title {
+  font-size: 46pt;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 24pt;
+  width: 600px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 3pt solid white;
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 22pt;
+  }
+
+  .subtitle {
+    font-size: 12pt;
+    width: 250px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .title {
+    font-size: 24pt;
+  }
+
+  .subtitle {
+    font-size: 14pt;
+    width: 300px;
+  }
+}
+
+/* content section */
+.content-section {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-item {
+  height: 300px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.class-name {
+  font-size: 24pt;
+}
+
+.class-duration {
+  font-size: 14pt;
+}
+
+@media screen and (max-width: 400px) {
+  .content-section {
+    padding: 80px 30px 80px 30px;
+  }
+
+  .content-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .content-section {
+    padding: 80px 50px 80px 50px;
+  }
+
+  .content-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .content-item {
+    width: 45%;
+  }
+}
