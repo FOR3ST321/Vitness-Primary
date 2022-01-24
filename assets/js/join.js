@@ -36,10 +36,6 @@ function validate(formData) {
     }
 
     if (fields.name === "phone") {
-      console.log(fields.value);
-      console.log(!fields.value.startsWith("+81"));
-      console.log(fields.value.substr(3).length < 11);
-
       if (
         !fields.value.startsWith("+81") ||
         fields.value.substr(3).length < 11
@@ -73,7 +69,6 @@ function validate(formData) {
 $("#joinForm").submit((e) => {
   e.preventDefault();
   const data = $("#joinForm").serializeArray();
-  console.log(data);
 
   $(".error-name, .error-email, .error-gender, .error-age, .error-phone").text(
     ""
