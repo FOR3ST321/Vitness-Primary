@@ -1,244 +1,244 @@
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-  margin-top: 80px;
+    margin-top: 80px;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 /* header */
 .header {
-  display: flex;
-  align-items: right;
-  height: 80px;
-  background-color: #4091c9;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+    display: flex;
+    align-items: right;
+    height: 80px;
+    background-color: #4091c9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 #logo-header {
-  height: inherit;
-  width: 65%;
-  display: flex;
-  justify-content: right;
+    height: inherit;
+    width: 65%;
+    display: flex;
+    justify-content: right;
 }
 
 #logo-header img {
-  height: 100%;
+    height: 100%;
 }
 
 .header-menu {
-  width: 35%;
-  margin-right: 50px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: right;
+    width: 35%;
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 
 #dropdown img {
-  height: 30px;
+    height: 30px;
 }
 
 #dropdown:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
-  .header-menu {
-    margin-right: 20px;
-  }
+    .header-menu {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (min-width: 1100px) {
-  #logo-header {
-    width: 60%;
-  }
+    #logo-header {
+        width: 60%;
+    }
 
-  .header-menu {
-    width: 40%;
-  }
+    .header-menu {
+        width: 40%;
+    }
 }
 
 /* navbar */
 .navbar {
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  padding: 30px 0 30px 0;
-  background-color: black;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 30px 0 30px 0;
+    background-color: black;
 }
 
 .nav-item {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  font-size: 15pt;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
 }
 
 .nav-item a {
-  padding: 0 5px 5px 5px;
-  border-bottom: 2px solid black;
+    padding: 0 5px 5px 5px;
+    border-bottom: 2px solid black;
 }
 
 .nav-item a:hover {
-  color: #90bede;
-  border-bottom: 2px solid #90bede;
+    color: #90bede;
+    border-bottom: 2px solid #90bede;
 }
 
 @media screen and (max-width: 700px) {
-  .navbar {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    width: 100%;
-  }
+    .navbar {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        width: 100%;
+    }
 
-  .nav-item {
-    padding: 10px 0 10px 0;
-  }
+    .nav-item {
+        padding: 10px 0 10px 0;
+    }
 }
 
 /* footer */
 .footer {
-  padding: 30px 40px 30px 80px;
-  background-color: #4091c9;
-  display: flex;
-  color: white;
+    padding: 30px 40px 30px 80px;
+    background-color: #4091c9;
+    display: flex;
+    color: white;
 }
 
 .footer-sosmed {
-  width: 50%;
+    width: 50%;
 }
 
 .footer-sosmed-header {
-  font-size: 18pt;
-  font-weight: bold;
-  padding-bottom: 20px;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .footer-sosmed-item {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .sosmed-name {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .sosmed-img img {
-  width: 50px;
+    width: 50px;
 }
 
 .footer-copyright {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-left: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
 }
 
 .footer-copyright img {
-  width: 40%;
+    width: 40%;
 }
 
 @media screen and (max-width: 320px) {
-  .footer {
-    padding: 30px 20px 30px 20px;
-  }
+    .footer {
+        padding: 30px 20px 30px 20px;
+    }
 
-  .footer-sosmed-container {
-    display: flex;
-  }
+    .footer-sosmed-container {
+        display: flex;
+    }
 
-  .sosmed-name {
-    display: none;
-  }
+    .sosmed-name {
+        display: none;
+    }
 
-  .sosmed-img img {
-    width: 40px;
-    padding: 0 5px 0 5px;
-  }
+    .sosmed-img img {
+        width: 40px;
+        padding: 0 5px 0 5px;
+    }
 
-  .footer-copyright {
-    padding-left: 20px;
-    text-align: center;
-    font-size: 9pt;
-  }
+    .footer-copyright {
+        padding-left: 20px;
+        text-align: center;
+        font-size: 9pt;
+    }
 
-  .footer-copyright img {
-    width: 80%;
-  }
+    .footer-copyright img {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 700px) {
-  .footer {
-    padding: 30px 20px 30px 20px;
-  }
+    .footer {
+        padding: 30px 20px 30px 20px;
+    }
 
-  .sosmed-img img {
-    width: 30px;
-  }
+    .sosmed-img img {
+        width: 30px;
+    }
 
-  .sosmed-name {
-    font-size: 10pt;
-  }
+    .sosmed-name {
+        font-size: 10pt;
+    }
 
-  .footer-copyright {
-    padding-left: 20px;
-    text-align: center;
-    font-size: 10pt;
-  }
+    .footer-copyright {
+        padding-left: 20px;
+        text-align: center;
+        font-size: 10pt;
+    }
 
-  .footer-copyright img {
-    width: 80%;
-  }
+    .footer-copyright img {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-  .footer {
-    padding-right: 50px;
-  }
+    .footer {
+        padding-right: 50px;
+    }
 
-  .footer-copyright {
-    padding-left: 50px;
-    text-align: center;
-  }
+    .footer-copyright {
+        padding-left: 50px;
+        text-align: center;
+    }
 }
 
 /* scroller */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none;
+    background: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 3px;
+    background: #555;
+    border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000;
+    background: #000;
 }

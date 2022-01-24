@@ -1,8 +1,9 @@
 $(document).ready(function () {
   programs.forEach(display);
+  
   function display(item) {
     $(".content-section").append(`
-          <button class="content-item content-item-${item.id}" >
+          <button class="content-item content-item-${item.id}" data-id="${item.id}">
             <div class="class-name">${item.name}</div>
             <div class="class-duration">${item.duration}</div>
             <div class="class-details">Details ></div>
@@ -15,6 +16,15 @@ $(document).ready(function () {
     );
   }
 
+  function getClassData(id){
+    let picked = null;
+    programs.forEach(e => {
+      if(e.id === id) picked = e;
+    });
+    return picked;
+  }
+
+  $('.popup').hide();
 
 
   $(".content-item").mouseenter(function(){
@@ -26,9 +36,7 @@ $(document).ready(function () {
     }).animate({
       borderWidth : '6'
     }, 100)
-  })
-
-  $(".content-item").mouseleave(function(){
+  }).mouseleave(function(){
     $(this).children('.class-details').animate({
       opacity: '0'
     }, 100)
@@ -38,4 +46,14 @@ $(document).ready(function () {
       borderWidth : '0'
     }, 100)
   })
+
+  $('.content-item').click(function (e) { 
+    //data
+    let data = getClassData($(this).data('id'));
+    // console.log(data);
+    $('#popup-title').text(data.name)
+    $('#popup-text-duration').text(data.duration);
+    $('#popup-text-desc').text(data.description);
+    $('.popup').show();
+  });
 })
