@@ -36,6 +36,10 @@ function validate(formData) {
     }
 
     if (fields.name === "phone") {
+      console.log(fields.value);
+      console.log(!fields.value.startsWith("+81"));
+      console.log(fields.value.substr(3).length < 11);
+
       if (
         !fields.value.startsWith("+81") ||
         fields.value.substr(3).length < 11
@@ -51,8 +55,8 @@ function validate(formData) {
     if (fields.name === "email") {
       if (
         !fields.value.endsWith(".com") ||
-        !fields.value.startsWith("@") ||
-        fields.value.split("@").length != 1
+        !fields.value.includes("@") ||
+        fields.value.split("@").length == 1
       ) {
         data.isValid = false;
         data.errorMsg.push({
@@ -70,6 +74,10 @@ $("#joinForm").submit((e) => {
   e.preventDefault();
   const data = $("#joinForm").serializeArray();
   console.log(data);
+
+  $(".error-name, .error-email, .error-gender, .error-age, .error-phone").text(
+    ""
+  );
   var error = validate(data).errorMsg;
   error.forEach(writeError);
   function writeError(item) {
