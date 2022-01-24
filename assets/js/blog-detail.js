@@ -18,5 +18,12 @@ $(document).ready(function () {
     $(".content-section").append(`
       <div class="content-desc">${blog[id].description}</div>
     `);
+
+    $(".category").click(function () {
+      location.href = `./blog.html?category=${blog[id].category.replace(
+        " ",
+        "-"
+      )}`;
+    });
   }
 });
