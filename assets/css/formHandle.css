@@ -1,0 +1,98 @@
+form {
+  width: 100%;
+}
+
+.input-item {
+  height: 50px;
+  margin: 20px 0 0px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12pt;
+}
+
+.input-item img {
+  height: 100%;
+  border-right: 1px black solid;
+}
+
+.age-gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.age-gender .input-item {
+  width: 46%;
+}
+
+select {
+  width: 46%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 12pt;
+}
+
+.input-item input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 12pt;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4091c9;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 15pt;
+}
+
+button[type="submit"]:hover {
+  background-color: #83c3f1;
+}
+
+.error-name,
+.error-age,
+.error-phone,
+.error-email,
+.error-gender {
+  color: red;
+  padding-top: 10px;
+  font-size: 10pt;
+}
+
+@media screen and (max-width: 350px) {
+  .input-item {
+    height: 35px;
+    margin-top: 10px;
+  }
+
+  select {
+    height: 35px;
+    font-size: 10pt;
+    margin-top: 10px;
+  }
+
+  .error-name,
+  .error-age,
+  .error-phone,
+  .error-email,
+  .error-gender {
+    font-size: 8pt;
+  }
+}

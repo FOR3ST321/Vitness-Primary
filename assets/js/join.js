@@ -16,7 +16,7 @@ function validate(formData) {
     }
 
     if (fields.name === "age") {
-      if (parseInt(fields.value) < 10) {
+      if (fields.value === "" || parseInt(fields.value) < 10) {
         data.isValid = false;
         data.errorMsg.push({
           field: "age",
@@ -69,5 +69,10 @@ function validate(formData) {
 $("#joinForm").submit((e) => {
   e.preventDefault();
   const data = $("#joinForm").serializeArray();
-  console.log(validate(data));
+  console.log(data);
+  var error = validate(data).errorMsg;
+  error.forEach(writeError);
+  function writeError(item) {
+    $(`.error-${item.field}`).text(item.message);
+  }
 });
