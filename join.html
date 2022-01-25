@@ -42,7 +42,7 @@
 
     <div class="card">
       <!-- ID FORM DAN NAMA INPUT JANGAN DIUBAH SOALNYA UDAH SETTING VALIDATION -->
-      <form action="./index.html" method="post" id="joinForm">
+      <form action="./index.html" id="joinForm" method="post">
         <div class="input-item">
           <img src="./assets/img/form/name.png" alt="" />
           <input type="text" name="name" placeholder="Name" /> <br />
@@ -57,7 +57,6 @@
             <option value="">Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="lanang kemayu">Kelvin</option>
           </select>
         </div>
         <div class="age-gender">
@@ -74,7 +73,7 @@
           <input type="text" placeholder="Phone Number" name="phone" /> <br />
         </div>
         <div class="error-phone"></div>
-        <button type="submit">Submit</button> <br />
+        <button id="joinBtn" type="submit"> Submit</button> <br />
       </form>
     </div>
 

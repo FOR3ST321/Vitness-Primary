@@ -1,81 +1,148 @@
-function validate(formData) {
-  let data = {
-    isValid: true,
-    errorMsg: [],
-  };
-
-  formData.forEach((fields) => {
-    if (fields.name === "name") {
-      if (fields.value.length < 3) {
-        data.isValid = false;
-        data.errorMsg.push({
-          field: "name",
-          message: "Name must be at least 3 characters!",
-        });
-      }
+function nameHandler(fields) {
+    if (fields.value === "") {
+        return {
+            field: "name",
+            message: "Name cannot be empty!",
+        };
+    } else if (fields.value.length < 3) {
+        return {
+            field: "name",
+            message: "Name must be at least 3 characters!",
+        };
+    } else {
+        return null;
     }
+}
 
-    if (fields.name === "age") {
-      if (fields.value === "" || parseInt(fields.value) < 10) {
-        data.isValid = false;
-        data.errorMsg.push({
-          field: "age",
-          message: "Age must be at least 10 years old!",
-        });
-      }
+function ageHandler(fields) {
+    if (fields.value === "") {
+        return {
+            field: "age",
+            message: "Age cannot be empty!",
+        };
+    } else if (parseInt(fields.value) < 10) {
+        return {
+            field: "age",
+            message: "Age must be at least 10 years old!",
+        };
+    } else {
+        return null;
     }
+}
 
-    if (fields.name === "gender") {
-      if (fields.value === "") {
-        data.isValid = false;
-        data.errorMsg.push({
-          field: "gender",
-          message: "Please select your gender!",
-        });
-      }
+function genderHandler(fields) {
+    if (fields.value === "") {
+        return {
+            field: "gender",
+            message: "Please select your gender!",
+        };
+    } else {
+        return null;
     }
+}
 
-    if (fields.name === "phone") {
-      if (
+function phoneHandler(fields) {
+    if (fields.value === "") {
+        return {
+            field: "phone",
+            message: "Phone cannot be empty!",
+        };
+    } else if (
         !fields.value.startsWith("+81") ||
         fields.value.substr(3).length < 11
-      ) {
-        data.isValid = false;
-        data.errorMsg.push({
-          field: "phone",
-          message: "Phone must starts with “+81” and must be 11 digits length",
-        });
-      }
+    ) {
+        return {
+            field: "phone",
+            message:
+                "Phone must starts with “+81” and must be 11 digits length",
+        };
+    } else {
+        return null;
     }
+}
 
-    if (fields.name === "email") {
-      if (
+function emailHandler(fields) {
+    if (fields.value === "") {
+        return {
+            field: "email",
+            message: "Email cannot be empty!",
+        };
+    } else if (
         !fields.value.endsWith(".com") ||
         !fields.value.includes("@") ||
         fields.value.split("@").length == 1
-      ) {
-        data.isValid = false;
-        data.errorMsg.push({
-          field: "email",
-          message: "Email must be valid!",
-        });
-      }
+    ) {
+        return {
+            field: "email",
+            message: "Email must be valid & ends with .com!",
+        };
+    } else {
+        return null;
     }
-  });
-
-  return data;
 }
 
-$("#joinForm").submit((e) => {
-  e.preventDefault();
-  const data = $("#joinForm").serializeArray();
+function validate(formData) {
+    let data = {
+        isValid: true,
+        errorMsg: [],
+    };
 
-  $(".error-name, .error-email, .error-gender, .error-age, .error-phone").text(
-    ""
-  );
-  var error = validate(data).errorMsg;
-  error.forEach(writeError);
-  function writeError(item) {
-    $(`.error-${item.field}`).text(item.message);
-  }
+    formData.forEach((fields) => {
+        switch (fields.name) {
+            case "name":
+                let name = nameHandler(fields);
+                if (name !== null) {
+                    data.isValid = false;
+                    data.errorMsg.push(name);
+                }
+                break;
+            case "age":
+                let age = ageHandler(fields);
+                if (age !== null) {
+                    data.isValid = false;
+                    data.errorMsg.push(age);
+                }
+                break;
+            case "gender":
+                let gender = genderHandler(fields);
+                if (gender !== null) {
+                    data.errorMsg.push(gender);
+                }
+                break;
+            case "phone":
+                let phone = phoneHandler(fields);
+                if (phone !== null) {
+                    data.errorMsg.push(phone);
+                }
+                break;
+            case "email":
+                let email = emailHandler(fields);
+                if (email !== null) {
+                    data.errorMsg.push(email);
+                }
+                break;
+        }
+    });
+
+    return data;
+}
+
+$("#joinBtn").on("click", function (e) {
+    e.preventDefault();
+    // console.log(form);
+    const data = $("#joinForm").serializeArray();
+
+    $(
+        ".error-name, .error-email, .error-gender, .error-age, .error-phone"
+    ).text("");
+    var error = validate(data).errorMsg;
+
+    // console.log(data)
+    if (error.length !== 0) {
+        error.forEach(function writeError(item) {
+            $(`.error-${item.field}`).text(item.message);
+        });
+    } else {
+        return $("#joinForm").submit();
+    }
 });

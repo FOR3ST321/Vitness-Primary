@@ -47,7 +47,7 @@ select {
   font-size: 12pt;
 }
 
-button[type="submit"] {
+#joinBtn {
   width: 100%;
   padding: 15px 0;
   border: none;
@@ -62,7 +62,7 @@ button[type="submit"] {
   font-size: 15pt;
 }
 
-button[type="submit"]:hover {
+#joinBtn:hover {
   background-color: #83c3f1;
 }
 
