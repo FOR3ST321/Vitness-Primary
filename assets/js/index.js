@@ -157,9 +157,8 @@ $(document).ready(function () {
                     .animate({ opacity: 1, marginLeft: "0px" }, 700);
                 currSlide = "#slide-" + slideIndex;
             });
-          
+          first = true;
           clearTimeout(timeout); //berhentiin dulu timeout
-          first = true; //ulang dari awal
           showSlides(); //jalanin lagi looping
     });
 
