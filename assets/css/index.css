@@ -39,13 +39,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .slider-title {
   font-size: 35px;
   color: white;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .slider-desc {
@@ -103,6 +104,7 @@
 
   .slider-content {
     width: 300px;
+    padding: 0 10px;
   }
 
   .slider-img {
@@ -111,12 +113,12 @@
   }
 
   .slider-title {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .slider-desc {
-    font-size: 11px;
-    margin-top: 10px;
+    font-size: 10px;
+    margin-top: 5px;
   }
 
   .slider-btn {
@@ -143,11 +145,12 @@
   }
 
   .slider-title {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .slider-desc {
-    font-size: 13px;
+    font-size: 10px;
+    margin-top: 7px;
   }
 
   .slider-btn {
