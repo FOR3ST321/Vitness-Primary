@@ -57,7 +57,7 @@ $(document).ready(function () {
     //slider
     let firstimg = true;
     slider.forEach(function (item) {
-        $(".slider").append(
+        $(".sliders-content").append(
             `
       <div class="slider-container" id="slide-${item.id}">
             <div class="slider-img-container">
@@ -116,8 +116,8 @@ $(document).ready(function () {
         } else {
             //geser kiri minus yang sekarang, geser kiri 0 yang mau next
             $(currSlide)
-                .css({ opacity: 1 })
-                .animate({ opacity: 0 }, 1000, function () {
+                .css({ opacity: 1, marginLeft:'0' })
+                .animate({ opacity: 0, marginLeft:'100px' }, 700, function () {
                     //change index
                     slideIndex++;
                     if (slideIndex > slider.length) {
@@ -126,12 +126,12 @@ $(document).ready(function () {
                     $(currSlide).hide();
                     $("#slide-" + slideIndex).show();
                     $("#slide-" + slideIndex)
-                        .css({ opacity: 0 })
-                        .animate({ opacity: 1 }, 1000);
+                        .css({ opacity: 0 , marginLeft:'-100px'})
+                        .animate({ opacity: 1, marginLeft:'0px' }, 700);
                     currSlide = "#slide-" + slideIndex;
                 });
         }
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 7000);
     }
 
     $(".slider-btn").on("click", function () {
