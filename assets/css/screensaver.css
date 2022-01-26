@@ -1,0 +1,8 @@
+#logo {
+    width: 300px;
+    position: absolute;
+  }
+
+  #logo img {
+    width: 100%;
+  }
