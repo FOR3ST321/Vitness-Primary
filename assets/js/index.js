@@ -76,8 +76,13 @@ $(document).ready(function () {
       `
         );
 
+        $(".dot-sliders").append(`
+        <span class="dot" id="dot-${item.id}"></span>
+        `);
+
         if (firstimg) {
             firstimg = false;
+            $("#dot-" + item.id).css({ backgroundColor: "white" });
         } else {
             $("#slide-" + item.id).hide();
         }
@@ -86,22 +91,8 @@ $(document).ready(function () {
     let slideIndex = 1;
     let first = true;
     let currSlide = "";
-    // slider.forEach((el) => {
-    //     $("#slide-" + el.id).show();
-    // });
 
-    // var interval = window.setInterval(rotateSlides, 3000);
-
-    // function rotateSlides() {
-    //   var $firstSlide = $('.slider').find('div:first');
-    //   // console.log($secondSlide)
-    //   var width = $firstSlide.width();
-    //   // console.log(width);
-
-    //   $firstSlide.animate({marginLeft: -width}, 1000, function(){
-    //     // What to do after the animation
-    //   })
-    // }
+    let timeout;
 
     showSlides();
 
@@ -116,23 +107,61 @@ $(document).ready(function () {
         } else {
             //geser kiri minus yang sekarang, geser kiri 0 yang mau next
             $(currSlide)
-                .css({ opacity: 1, marginLeft:'0' })
-                .animate({ opacity: 0, marginLeft:'100px' }, 700, function () {
-                    //change index
-                    slideIndex++;
-                    if (slideIndex > slider.length) {
-                        slideIndex = 1;
+                .css({ opacity: 1, marginLeft: "0" })
+                .animate(
+                    { opacity: 0, marginLeft: "-100px" },
+                    700,
+                    function () {
+                        //change index
+                        $("#dot-" + slideIndex).css({
+                            backgroundColor: "#6baddd",
+                        });
+                        slideIndex++;
+                        if (slideIndex > slider.length) {
+                            slideIndex = 1;
+                        }
+                        $(currSlide).hide();
+                        $("#slide-" + slideIndex).show();
+
+                        //change dot color
+                        $("#dot-" + slideIndex).css({
+                            backgroundColor: "white",
+                        });
+
+                        $("#slide-" + slideIndex)
+                            .css({ opacity: 0, marginLeft: "100px" })
+                            .animate({ opacity: 1, marginLeft: "0px" }, 700);
+                        currSlide = "#slide-" + slideIndex;
                     }
-                    $(currSlide).hide();
-                    $("#slide-" + slideIndex).show();
-                    $("#slide-" + slideIndex)
-                        .css({ opacity: 0 , marginLeft:'-100px'})
-                        .animate({ opacity: 1, marginLeft:'0px' }, 700);
-                    currSlide = "#slide-" + slideIndex;
-                });
+                );
         }
-        setTimeout(showSlides, 7000);
+        timeout = setTimeout(showSlides, 6000);
     }
+
+    $(".dot").on("click", function () {
+        let dotId = this.id
+        $(currSlide)
+            .css({ opacity: 1, marginLeft: "0" })
+            .animate({ opacity: 0, marginLeft: "-100px" }, 700, function () {
+                //change index
+                $("#dot-" + slideIndex).css({ backgroundColor: "#6baddd" });
+                slideIndex = dotId.substr(4); //ganti posisi indexnya
+                $(currSlide).hide();
+                $("#slide-" + slideIndex).show();
+
+                //change dot color
+                $("#dot-" + slideIndex).css({ backgroundColor: "white" });
+
+                $("#slide-" + slideIndex)
+                    .css({ opacity: 0, marginLeft: "100px" })
+                    .animate({ opacity: 1, marginLeft: "0px" }, 700);
+                currSlide = "#slide-" + slideIndex;
+            });
+          
+          clearTimeout(timeout); //berhentiin dulu timeout
+          first = true; //ulang dari awal
+          showSlides(); //jalanin lagi looping
+    });
 
     $(".slider-btn").on("click", function () {
         // console.log();

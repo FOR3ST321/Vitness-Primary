@@ -3,3 +3,4 @@ gym-join https://www.istockphoto.com/photo/blue-fitness-mat-and-dumbbells-blue-f
 gym-class https://unsplash.com/photos/gJtDg6WfMlQ
 gym-blog https://unsplash.com/photos/20jX9b35r_M
 bg-gelap https://www.istockphoto.com/photo/weight-lifting-gm185068878-19357198
+diskon http://www.stickpng.com/img/miscellaneous/discount-signs/special-discount-sign

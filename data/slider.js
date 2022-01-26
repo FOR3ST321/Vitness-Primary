@@ -23,4 +23,12 @@ const slider = [
         btnUrl : './classes.html',
         image : './assets/img/class/1.png',
     },
+    {
+        id : 4,
+        title : '15% off membership!',
+        description : `1ST anniv special! join vitness with good price!`,
+        hasBtn : false,
+        btnUrl : null,
+        image : './assets/img/discount.jpg',
+    },
 ]
