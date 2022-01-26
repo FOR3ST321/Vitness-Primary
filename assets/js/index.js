@@ -67,25 +67,25 @@ $(document).ready(function () {
         }
     });
 
-    var slideIndex = 1;
+    let slideIndex = 1;
     showSlides();
 
     function showSlides() {
-        var i;
-        for (i = 0; i < slider.length; i++) {
-            $("#slide-" + slider[i].id).hide();
-        }
+        slider.forEach((el) => {
+            $("#slide-" + el.id).hide();
+        });
         $("#slide-" + slideIndex).show();
+        $("#slide-" + slideIndex).css({opacity:0}).animate({opacity:1}, 1000);
         slideIndex++;
+        
         if (slideIndex > slider.length) {
             slideIndex = 1;
         }
         setTimeout(showSlides, 5000);
     }
 
-
-    $('.slider-btn').on('click' , function(){
-      // console.log();
-      window.location.replace($(this).data('url'));
-    })
+    $(".slider-btn").on("click", function () {
+        // console.log();
+        window.location.replace($(this).data("url"));
+    });
 });
