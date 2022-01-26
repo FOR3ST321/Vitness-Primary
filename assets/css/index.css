@@ -1,8 +1,8 @@
 /* slider */
 
 .slider {
-    background-image: url("../img/join-bg.jpg");
-    background-size: cover;
+  background-image: url("../img/join-bg.jpg");
+  background-size: cover;
 }
 
 .sliders {
@@ -17,504 +17,538 @@
 }
 
 .slider-container {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* flex-wrap: wrap; */
 }
 
 .slider-img-container {
-    width: 50%;
-    height: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 650px;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-content {
-    width: 50%;
-    height: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+  width: 650px;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .slider-title {
-    font-size: 35px;
-    color: white;
+  font-size: 35px;
+  color: white;
 }
 
 .slider-desc {
-    font-size: 16px;
-    color: white;
-    margin-top: 20px;
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
 }
 
 .slider-btn {
-    width: 120px;
-    margin-top: 30px;
-    padding: 15px 0px;
-    color: white;
-    background-color: #4091c9;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 0;
-    font-size: 12pt;
+  width: 120px;
+  margin-top: 30px;
+  padding: 15px 0px;
+  color: white;
+  background-color: #4091c9;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  font-size: 12pt;
 }
 
 .slider-img {
-    padding: 0;
-    width: 90%;
-    max-height: 70%;
-    object-fit: cover;
-    /* filter: brightness(10%); */
+  padding: 0;
+  width: 90%;
+  max-height: 70%;
+  object-fit: cover;
+  /* filter: brightness(10%); */
 }
 
 @media screen and (max-width: 700px) {
-    .slider-img {
-        width: 90%;
-    }
+  .slider-img {
+    width: 90%;
+  }
 
-    .slider-title {
-        font-size: 28px;
-    }
+  .slider-title {
+    font-size: 28px;
+  }
 
-    .slider-desc {
-        font-size: 13px;
-    }
+  .slider-desc {
+    font-size: 13px;
+  }
 
-    .slider-btn {
-        width: 100px;
-        margin-top: 20px;
-        padding: 12px 0px;
-        font-size: 10pt;
-    }
+  .slider-btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 12px 0px;
+    font-size: 10pt;
+  }
 }
 
-@media screen and (max-width: 550px) {
-    .slider-img-container {
-        width: 100%;
-    }
+@media screen and (max-width: 321px) {
+  .slider-img-container {
+    width: 300px;
+  }
 
-    .slider-content {
-        width: 100%;
-    }
+  .slider-content {
+    width: 300px;
+  }
 
-    .slider-img {
-        width: 50%;
-    }
+  .slider-img {
+    width: 100%;
+    padding-left: 10px;
+  }
 
-    .slider-title {
-        font-size: 28px;
-    }
+  .slider-title {
+    font-size: 22px;
+  }
 
-    .slider-desc {
-        font-size: 13px;
-    }
+  .slider-desc {
+    font-size: 11px;
+    margin-top: 10px;
+  }
 
-    .slider-btn {
-        width: 75px;
-        margin-top: 10px;
-        padding: 7px 0px;
-        font-size: 9pt;
-        border-radius:5px
-    }
+  .slider-btn {
+    width: 75px;
+    margin-top: 10px;
+    padding: 7px 0px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 550px) {
+  .slider-img-container {
+    width: 300px;
+  }
+
+  .slider-content {
+    width: 300px;
+  }
+
+  .slider-img {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .slider-title {
+    font-size: 28px;
+  }
+
+  .slider-desc {
+    font-size: 13px;
+  }
+
+  .slider-btn {
+    width: 75px;
+    margin-top: 10px;
+    padding: 7px 0px;
+    font-size: 9pt;
+    border-radius: 5px;
+  }
 }
 
 /* join section */
 .join-section {
-    padding: 50px;
-    background-image: url("../img/gym-join-gelap.jpg");
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
+  padding: 50px;
+  background-image: url("../img/gym-join-gelap.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
 }
 
 .join-content {
-    padding: 30px;
-    width: 70%;
+  padding: 30px;
+  width: 70%;
 }
 
 .join-content-header {
-    color: white;
-    font-size: 36pt;
-    font-weight: bold;
+  color: white;
+  font-size: 36pt;
+  font-weight: bold;
 }
 
 .join-content-subheader {
-    color: white;
-    font-size: 15pt;
-    margin-bottom: 150px;
-    padding: 20px 50px 0 0;
+  color: white;
+  font-size: 15pt;
+  margin-bottom: 150px;
+  padding: 20px 50px 0 0;
 }
 
 .join-content-button {
-    background-color: #3a3a3a;
-    padding: 15px 40px 15px 40px;
-    border-radius: 10px;
-    font-size: 20pt;
+  background-color: #3a3a3a;
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+  font-size: 20pt;
 }
 
 .join-picture {
-    width: 30%;
+  width: 30%;
 }
 
 .join-picture img {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
-    .join-section {
-        flex-direction: column-reverse;
-    }
+  .join-section {
+    flex-direction: column-reverse;
+  }
 
-    .join-picture {
-        width: 100%;
-    }
+  .join-picture {
+    width: 100%;
+  }
 
-    .join-content {
-        padding: 30px 0 30px 0;
-        width: 100%;
-        text-align: center;
-    }
+  .join-content {
+    padding: 30px 0 30px 0;
+    width: 100%;
+    text-align: center;
+  }
 
-    .join-content-header {
-        font-size: 20pt;
-    }
+  .join-content-header {
+    font-size: 20pt;
+  }
 
-    .join-content-subheader {
-        font-size: 12pt;
-        padding: 20px 0 0 0;
-        margin-bottom: 50px;
-    }
+  .join-content-subheader {
+    font-size: 12pt;
+    padding: 20px 0 0 0;
+    margin-bottom: 50px;
+  }
 
-    .join-content-button {
-        font-size: 12pt;
-    }
+  .join-content-button {
+    font-size: 12pt;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-    .join-picture img {
-        padding-top: 50px;
-        width: 200px;
-    }
-    .join-content-subheader {
-        width: 600px;
-        margin-bottom: 50px;
-    }
+  .join-picture img {
+    padding-top: 50px;
+    width: 200px;
+  }
+  .join-content-subheader {
+    width: 600px;
+    margin-bottom: 50px;
+  }
 }
 
 /* class section */
 .class-section {
-    background-image: url("../img/gym-class.jpg");
-    background-size: cover;
-    padding: 50px;
+  background-image: url("../img/gym-class.jpg");
+  background-size: cover;
+  padding: 50px;
 }
 
 .class-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 .header-header {
-    font-size: 36pt;
-    font-weight: bold;
+  font-size: 36pt;
+  font-weight: bold;
 }
 
 .header-subheader {
-    font-size: 18pt;
+  font-size: 18pt;
 }
 
 .class-content {
-    display: flex;
-    padding-bottom: 30px;
-    overflow: auto;
+  display: flex;
+  padding-bottom: 30px;
+  overflow: auto;
 }
 
 .class-content::-webkit-scrollbar {
-    height: 5px;
+  height: 5px;
 }
 
 .class-content-item {
-    /* display: block; */
-    border: none;
-    height: 300px;
-    background-color: black;
-    border-radius: 10px;
-    margin: 0 30px 0 30px;
-    color: white;
+  /* display: block; */
+  border: none;
+  height: 300px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 30px 0 30px;
+  color: white;
 }
 
 .class-pict {
-    height: 60%;
-    background-size: cover;
+  height: 60%;
+  background-size: cover;
 }
 
 .class-desc {
-    width: 230px;
-    height: 40%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 230px;
+  height: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .class-name {
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
 }
 
 .class-button-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 50px 0;
 }
 
 .class-button {
-    padding: 15px 50px 15px 50px;
-    background-color: #255271;
-    border-radius: 10px;
+  padding: 15px 50px 15px 50px;
+  background-color: #255271;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 374px) {
-    .class-content-item {
-        margin-left: 25px;
-        height: 250px;
-    }
+  .class-content-item {
+    margin-left: 25px;
+    height: 250px;
+  }
 
-    .class-desc {
-        width: 180px;
-    }
+  .class-desc {
+    width: 180px;
+  }
 
-    .class-name {
-        font-size: 15pt;
-    }
+  .class-name {
+    font-size: 15pt;
+  }
 
-    .class-button {
-        font-size: 10pt;
-        padding: 10px 30px 10px 30px;
-    }
+  .class-button {
+    font-size: 10pt;
+    padding: 10px 30px 10px 30px;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 400px) {
-    .class-content-item {
-        margin-left: 25px;
-    }
+  .class-content-item {
+    margin-left: 25px;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 700px) {
-    .class-content-item {
-        margin-left: 40px;
-    }
+  .class-content-item {
+    margin-left: 40px;
+  }
 
-    .class-desc {
-        width: 235px;
-    }
+  .class-desc {
+    width: 235px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .class-header {
-        text-align: center;
-    }
+  .class-header {
+    text-align: center;
+  }
 
-    .header-header {
-        font-size: 20pt;
-    }
+  .header-header {
+    font-size: 20pt;
+  }
 
-    .header-subheader {
-        padding-top: 10px;
-        font-size: 12pt;
-    }
+  .header-subheader {
+    padding-top: 10px;
+    font-size: 12pt;
+  }
 
-    .class-name {
-        font-size: 18pt;
-    }
+  .class-name {
+    font-size: 18pt;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-    .class-desc {
-        width: 270px;
-    }
+  .class-desc {
+    width: 270px;
+  }
 }
 
 /* blog section */
 .blog-section {
-    background-image: url("../img/gym-blog.jpg");
-    background-size: cover;
-    padding: 50px 50px 50px 80px;
+  background-image: url("../img/gym-blog.jpg");
+  background-size: cover;
+  padding: 50px 50px 50px 80px;
 }
 
 .blog-header {
-    padding: 30px 0 30px 0;
-    font-size: 36pt;
-    font-weight: bold;
-    color: white;
+  padding: 30px 0 30px 0;
+  font-size: 36pt;
+  font-weight: bold;
+  color: white;
 }
 
 .blog-content {
-    height: 420px;
-    overflow: auto;
+  height: 420px;
+  overflow: auto;
 }
 
 .blog-content::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 .blog-content-item {
-    display: flex;
-    background-color: white;
-    margin: 20px 20px 20px 0;
+  display: flex;
+  background-color: white;
+  margin: 20px 20px 20px 0;
 }
 
 .blog-item-img {
-    width: 20%;
-    background-image: url("../img/gigachad.jpg");
-    background-size: cover;
-    position: relative;
+  width: 20%;
+  background-image: url("../img/gigachad.jpg");
+  background-size: cover;
+  position: relative;
 }
 
 .blog-item-content {
-    width: 80%;
-    padding: 30px 100px 30px 30px;
-    height: 200px;
+  width: 80%;
+  padding: 30px 100px 30px 30px;
+  height: 200px;
 }
 
 .blog-category {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 5px;
-    background-color: #255271;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: #255271;
 }
 
 .blog-title {
-    font-size: 18pt;
-    font-weight: bold;
-    color: black;
+  font-size: 18pt;
+  font-weight: bold;
+  color: black;
 }
 
 .blog-time {
-    color: #686868;
-    padding-bottom: 20px;
+  color: #686868;
+  padding-bottom: 20px;
 }
 
 .blog-excerpt {
-    color: black;
+  color: black;
 }
 
 .blog-button-container {
-    padding: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 
 .blog-button {
-    color: black;
-    font-size: 13pt;
-    padding: 15px 50px 15px 50px;
-    background-color: #d1d1d1;
-    border-radius: 10px;
+  color: black;
+  font-size: 13pt;
+  padding: 15px 50px 15px 50px;
+  background-color: #d1d1d1;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 374px) {
-    .blog-section {
-        text-align: center;
-        padding-left: 50px;
-    }
+  .blog-section {
+    text-align: center;
+    padding-left: 50px;
+  }
 
-    .blog-header {
-        font-size: 20pt;
-    }
+  .blog-header {
+    font-size: 20pt;
+  }
 
-    .blog-content-item {
-        margin-right: 0;
-        flex-direction: column;
-        height: 500px;
-    }
+  .blog-content-item {
+    margin-right: 0;
+    flex-direction: column;
+    height: 500px;
+  }
 
-    .blog-item-img {
-        height: 40%;
-        width: 100%;
-    }
+  .blog-item-img {
+    height: 40%;
+    width: 100%;
+  }
 
-    .blog-item-content {
-        height: 60%;
-        padding: 20px;
-        width: 100%;
-    }
+  .blog-item-content {
+    height: 60%;
+    padding: 20px;
+    width: 100%;
+  }
 
-    .blog-title {
-        font-size: 15pt;
-    }
+  .blog-title {
+    font-size: 15pt;
+  }
 
-    .blog-excerpt {
-        font-size: 12pt;
-    }
+  .blog-excerpt {
+    font-size: 12pt;
+  }
 
-    .blog-button {
-        font-size: 12pt;
-        padding: 10px 50px 10px 50px;
-    }
+  .blog-button {
+    font-size: 12pt;
+    padding: 10px 50px 10px 50px;
+  }
 }
 
 @media screen and (min-width: 374px) and (max-width: 700px) {
-    .blog-section {
-        text-align: center;
-        padding-left: 50px;
-    }
+  .blog-section {
+    text-align: center;
+    padding-left: 50px;
+  }
 
-    .blog-header {
-        font-size: 20pt;
-    }
+  .blog-header {
+    font-size: 20pt;
+  }
 
-    .blog-content-item {
-        margin-right: 0;
-        flex-direction: column;
-        height: 400px;
-    }
+  .blog-content-item {
+    margin-right: 0;
+    flex-direction: column;
+    height: 400px;
+  }
 
-    .blog-item-img {
-        height: 40%;
-        width: 100%;
-    }
+  .blog-item-img {
+    height: 40%;
+    width: 100%;
+  }
 
-    .blog-item-content {
-        height: 60%;
-        padding: 20px;
-        width: 100%;
-    }
+  .blog-item-content {
+    height: 60%;
+    padding: 20px;
+    width: 100%;
+  }
 
-    .blog-title {
-        font-size: 15pt;
-    }
+  .blog-title {
+    font-size: 15pt;
+  }
 
-    .blog-excerpt {
-        font-size: 12pt;
-    }
+  .blog-excerpt {
+    font-size: 12pt;
+  }
 
-    .blog-button {
-        font-size: 12pt;
-    }
+  .blog-button {
+    font-size: 12pt;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-    .blog-content {
-        height: 530px;
-    }
+  .blog-content {
+    height: 530px;
+  }
 
-    .blog-item-img {
-        width: 40%;
-    }
+  .blog-item-img {
+    width: 40%;
+  }
 
-    .blog-item-content {
-        width: 60%;
-        padding: 30px 10px 30px 30px;
-        height: 240px;
-    }
+  .blog-item-content {
+    width: 60%;
+    padding: 30px 10px 30px 30px;
+    height: 240px;
+  }
 }
