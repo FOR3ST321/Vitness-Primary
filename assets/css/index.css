@@ -5,6 +5,17 @@
     background-size: cover;
 }
 
+.sliders {
+  background-image: url("../img/join-bg.jpg");
+  background-size: cover;
+}
+
+.sliders-content {
+  display: flex;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+
 .slider-container {
     display: flex;
     padding: 0;
