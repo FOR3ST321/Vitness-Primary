@@ -2,7 +2,6 @@
 
 .slider {
     background-image: url("../img/join-bg.jpg");
-    /* filter: brightness(50%); */
     background-size: cover;
 }
 
@@ -62,31 +61,6 @@
     object-fit: cover;
     /* filter: brightness(10%); */
 }
-
-/* @-webkit-keyframes fade {
-  from {
-      opacity: 0.4;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-      opacity: 0.4;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-} */
 
 @media screen and (max-width: 700px) {
     .slider-img {

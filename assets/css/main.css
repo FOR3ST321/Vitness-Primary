@@ -3,6 +3,8 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    /* max-width: 100%;*/
+    /* overflow-x: hidden; */
 }
 
 body {
