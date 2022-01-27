@@ -1,54 +1,54 @@
 .popup {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 99;
-    width: 100%;
-    height: 110%;
-    margin-top: -11vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  width: 100%;
+  height: 110%;
+  margin-top: -16vh;
 }
 
 .popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .popup-content {
-    border-radius: 10px;
-    padding: 20px;
-    background-color: white;
-    width: 50vw;
-    min-height: 30vh;
-    max-height: 80vh;
-    border: 5px solid #6496f8;
-    overflow: auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  width: 50vw;
+  min-height: 30vh;
+  max-height: 80vh;
+  border: 5px solid #6496f8;
+  overflow: auto;
 }
 
 .popup-close {
-    font-size: 30px;
-    padding: 0px 10px;
+  font-size: 30px;
+  padding: 0px 10px;
 }
 
 .popup-line {
-    margin-bottom: 20px;
-    margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.popup-desc p{
-    text-align: justify
+.popup-desc p {
+  text-align: justify;
 }
 
-@media screen and (min-width: 321px) and (max-width: 700px) {
-    .popup-content {
-        width: 80vw;
-    }
+@media screen and (max-width: 700px) {
+  .popup-content {
+    width: 80vw;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-    .popup-content {
-        width: 60vw;
-    }
+  .popup-content {
+    width: 60vw;
+  }
 }
