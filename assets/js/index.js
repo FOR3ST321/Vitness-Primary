@@ -92,9 +92,7 @@ $(document).ready(function () {
     let first = true;
     let currSlide = "";
 
-    let timeout;
-
-    showSlides();
+    let interval;
 
     function showSlides() {
         if (first) {
@@ -135,8 +133,9 @@ $(document).ready(function () {
                     }
                 );
         }
-        timeout = setTimeout(showSlides, 6000);
     }
+
+    interval = setInterval(showSlides, 5000);
 
     $(".dot").on("click", function () {
         let dotId = this.id
@@ -158,8 +157,8 @@ $(document).ready(function () {
                 currSlide = "#slide-" + slideIndex;
             });
           first = true;
-          clearTimeout(timeout); //berhentiin dulu timeout
-          showSlides(); //jalanin lagi looping
+          clearInterval(interval);//berhentiin dulu interval
+          interval = setInterval(showSlides, 5000); //jalanin lagi looping, kasih tau kalau dipanggil dari dot
     });
 
     $(".slider-btn").on("click", function () {
