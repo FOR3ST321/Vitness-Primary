@@ -15,27 +15,21 @@
         transition: all 0.4s;
       }
 
-      #logo {
+      #myCanvas {
         width: 300px;
         position: absolute;
       }
-
-      #logo img {
-        width: 100%;
-      }
     </style>
     <script>
-      const color = "0123456789abcdef";
-      let newColor = "";
-
-      const newRandomColor = () => {
-        const index = Math.floor(Math.random() * (15 - 0) + 1);
-        newColor = newColor + color[index];
-        return newColor.length < 6 ? newRandomColor() : newColor;
-      };
 
       window.onload = () => {
-        let logo = document.getElementById("logo");
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("myImage");
+        ctx.drawImage(img, 0, 0, img.width/7, img.height/7);
+
+
+        let logo = document.getElementById("myCanvas");
         let toBottom = true;
         let toRight = true;
         setInterval(() => {
@@ -46,23 +40,15 @@
           if (!toBottom && top > 0 && top < height) {
           } else if (top >= height) {
             toBottom = false;
-            newColor = "";
-            newRandomColor();
           } else if (top <= 0) {
             toBottom = true;
-            newColor = "";
-            newRandomColor();
           }
 
           if (!toRight && left > 0 && left < width) {
           } else if (left >= width) {
             toRight = false;
-            newColor = "";
-            newRandomColor();
           } else if (left <= 0) {
             toRight = true;
-            newColor = "";
-            newRandomColor();
           }
 
           if (toBottom) {
@@ -74,16 +60,16 @@
 
           logo.style.top = `${top}px`;
           logo.style.left = `${left}px`;
-          document.getElementsByTagName(
-            "body"
-          )[0].style.backgroundColor = `#${newColor}`;
-        }, 10);
+        }, 8);
       };
+
+
     </script>
   </head>
   <body>
-    <div id="logo">
-      <img src="./assets/img/logo/logo.png" />
-    </div>
+    <canvas id="myCanvas">
+      
+    </canvas>
+    <img src="./assets/img/logo/logo.png" style="display: none" id="myImage" />
   </body>
 </html>
