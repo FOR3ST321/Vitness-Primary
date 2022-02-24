@@ -87,7 +87,7 @@ $(document).ready(function () {
   //screensaver
   var timeout;
   $(document)
-    .on("mousemove keydown click", function () {
+    .on("mousemove keydown click mousewheel", function () {
       $("#CanvasScreenSaver").hide();
       clearTimeout(timeout);
       timeout = setTimeout(function () {
