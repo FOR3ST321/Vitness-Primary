@@ -1,83 +1,95 @@
 $(document).ready(function () {
-    function setScreensaver() {
-        var canvas = document.getElementById("CanvasScreenSaver");
-        var ctx = canvas.getContext("2d");
-        var img = document.getElementById("logoCanvas");
-        ctx.drawImage(img, 0, 0, img.width / 7, img.height / 7);
+  const img = new Image();
+  img.src = "./assets/img/logo/logo.png";
 
-        let logo = document.getElementById("CanvasScreenSaver");
-        let toBottom = true;
-        let toRight = true;
-        setInterval(() => {
-            let height = window.innerHeight - img.height/7;
-            let width = window.innerWidth - img.width/7;
-            let top = logo.offsetTop;
-            let left = logo.offsetLeft;
-            if (top >= height) {
-                toBottom = false;
-            } else if (top <= 0) {
-                toBottom = true;
-            }
+  function setScreensaver() {
+    var canvas = document.getElementById("CanvasScreenSaver");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var ctx = canvas.getContext("2d");
 
-            if (left >= width) {
-                toRight = false;
-            } else if (left <= 0) {
-                toRight = true;
-            }
+    imgWidth = img.width / 7;
+    imgHeight = img.height / 7;
 
-            if (toBottom) {
-                top = top + 2;
-            } else top = top - 2;
-            if (toRight) {
-                left = left + 2;
-            } else left = left - 2;
-
-            logo.style.top = `${top}px`;
-            logo.style.left = `${left}px`;
-        }, 8);
+    if (window.innerWidth < 800) {
+      imgWidth = img.width / 8;
+      imgHeight = img.height / 8;
+      if (window.innerWidth < 450) {
+        imgWidth = img.width / 10;
+        imgHeight = img.height / 10;
+        if (window.innerWidth < 350) {
+          imgWidth = img.width / 12;
+          imgHeight = img.height / 12;
+        }
+      }
     }
 
-    // navbar
-    $(".navbar").css("display", "none");
-    $("#dropdown").click(function () {
-        $(".navbar").slideToggle();
+    let x = 0;
+    let y = 0;
+    let x1 = 1;
+    let y1 = 1;
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width + imgWidth, canvas.height + imgHeight);
+      ctx.drawImage(img, x, y, imgWidth, imgHeight);
+      if (x <= 0) {
+        x1 = 2;
+      } else if (x >= canvas.width - imgWidth) {
+        x1 = -2;
+      }
+      if (y <= 0) {
+        y1 = 2;
+      } else if (y >= canvas.height - imgHeight) {
+        y1 = -2;
+      }
+      y += y1;
+      x += x1;
+      window.requestAnimationFrame(draw);
+    }
+    window.requestAnimationFrame(draw);
+  }
+
+  // navbar
+  $(".navbar").css("display", "none");
+  $("#dropdown").click(function () {
+    $(".navbar").slideToggle();
+  });
+
+  $(".popup-close")
+    .mouseenter(function () {
+      $(this).css({
+        padding: "0px 10px",
+        backgroundColor: "#e6e6e6",
+        borderRadius: "5px",
+        cursor: "pointer",
+      });
+    })
+    .mouseleave(function () {
+      $(this).css({
+        backgroundColor: "white",
+      });
     });
 
-    $(".popup-close")
-        .mouseenter(function () {
-            $(this).css({
-                padding: "0px 10px",
-                backgroundColor: "#e6e6e6",
-                borderRadius: "5px",
-                cursor: "pointer",
-            });
-        })
-        .mouseleave(function () {
-            $(this).css({
-                backgroundColor: "white",
-            });
-        });
+  $(".popup").click(function (e) {
+    if (!$(e.target).is($(":not(.popup)"))) {
+      $(this).hide();
+    }
+  });
 
-    $(".popup").click(function (e) {
-        if (!$(e.target).is($(":not(.popup)"))) {
-            $(this).hide();
-        }
-    });
+  $(".popup-close").click(function () {
+    $(".popup").hide();
+  });
 
-    $(".popup-close").click(function () {
-        $(".popup").hide();
-    });
-
-    //screensaver
-    var timeout;
-    $(document)
-        .on("mousemove keydown click", function () {
-            $("#ScreenSaver").hide();
-            clearTimeout(timeout);
-            timeout = setTimeout(function () {
-                $("#ScreenSaver").show();
-                setScreensaver();
-            }, 10 * 1000);
-        })
-        .click();
+  //screensaver
+  var timeout;
+  $(document)
+    .on("mousemove keydown click", function () {
+      $("#CanvasScreenSaver").hide();
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        $("#CanvasScreenSaver").show();
+        setScreensaver();
+      }, 3 * 1000);
+    })
+    .click();
 });
