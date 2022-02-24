@@ -34,13 +34,17 @@ $(document).ready(function () {
       ctx.drawImage(img, x, y, imgWidth, imgHeight);
       if (x <= 0) {
         x1 = 2;
+        if (window.innerWidth < 450) x1 = 1;
       } else if (x >= canvas.width - imgWidth) {
         x1 = -2;
+        if (window.innerWidth < 450) x1 = -1;
       }
       if (y <= 0) {
         y1 = 2;
+        if (window.innerWidth < 450) y1 = 1;
       } else if (y >= canvas.height - imgHeight) {
         y1 = -2;
+        if (window.innerWidth < 450) y1 = -1;
       }
       y += y1;
       x += x1;
