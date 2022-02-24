@@ -89,7 +89,7 @@ $(document).ready(function () {
       timeout = setTimeout(function () {
         $("#CanvasScreenSaver").show();
         setScreensaver();
-      }, 3 * 1000);
+      }, 10 * 1000);
     })
     .click();
 });
