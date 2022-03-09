@@ -31,6 +31,7 @@ a {
 .header {
   display: flex;
   align-items: right;
+  justify-content: space-between;
   height: 80px;
   background-color: #4091c9;
   position: fixed;
@@ -48,11 +49,11 @@ a {
 }
 
 #logo-header img {
-  height: 100%;
+  height: 100px;
 }
 
 .header-menu {
-  width: 35%;
+  /* width: 35%; */
   margin-right: 50px;
   color: white;
   display: flex;
@@ -70,18 +71,18 @@ a {
 
 @media screen and (max-width: 700px) {
   .header-menu {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 }
 
 @media screen and (min-width: 1100px) {
-  #logo-header {
-    width: 60%;
+  /* #logo-header {
+    width: 50%;
   }
 
   .header-menu {
-    width: 40%;
-  }
+    width: 50%;
+  } */
 }
 
 /* navbar */
