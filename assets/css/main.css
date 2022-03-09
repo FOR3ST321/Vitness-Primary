@@ -76,11 +76,11 @@ a {
 }
 
 @media screen and (min-width: 1100px) {
-  /* #logo-header {
+  #logo-header {
     width: 50%;
   }
 
-  .header-menu {
+  /* .header-menu {
     width: 50%;
   } */
 }
